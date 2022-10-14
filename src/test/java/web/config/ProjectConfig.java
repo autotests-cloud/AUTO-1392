@@ -1,5 +1,6 @@
-package cloud.autotests.config;
+package web.config;
 
+import com.codeborne.selenide.Configuration;
 import org.aeonbits.owner.Config;
 
 @Config.LoadPolicy(Config.LoadType.MERGE)
@@ -19,4 +20,7 @@ public interface ProjectConfig extends Config {
     String browserMobileView();
     String remoteDriverUrl();
     String videoStorage();
+    @DefaultValue("https://miro.com")
+    String browserUrl();
+
 }

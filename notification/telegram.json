@@ -1,0 +1,16 @@
+{
+  "base": {
+    "project": "miro-e2e-tests",
+    "environment": "prod",
+    "comment": "Test telegram report",
+    "reportLink": "",
+    "language": "en",
+    "allureFolder": "build/allure-report/",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "5654487937:AAFBxOVSlbuzJ_BuVcweSzq0a2Qa0ZH6I94",
+    "chat": "788646272",
+    "replyTo": ""
+  }
+}

@@ -1,4 +1,4 @@
-package cloud.autotests.config;
+package web.config;
 
 import org.aeonbits.owner.ConfigFactory;
 

@@ -1,6 +1,6 @@
-package cloud.autotests.helpers;
+package web.helpers;
 
-import cloud.autotests.config.Project;
+import web.config.Project;
 import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -14,7 +14,7 @@ public class DriverSettings {
         Configuration.browser = Project.config.browser();
         Configuration.browserVersion = Project.config.browserVersion();
         Configuration.browserSize = Project.config.browserSize();
-//        Configuration.baseUrl = App.config.webUrl();
+        Configuration.baseUrl = Project.config.browserUrl();
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         ChromeOptions chromeOptions = new ChromeOptions();
