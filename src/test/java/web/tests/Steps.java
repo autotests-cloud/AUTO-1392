@@ -54,5 +54,9 @@ public class Steps {
     public static void checkingPresenceOfTheLogo(){
         $("header .IconButton__IconButtonInner-sc-1w01a3h-0 svg").shouldBe(Condition.appear);
     }
+    public void compareTextOnMainPage(){
+        $(".com-sec-slider-3 .com-el-content").shouldHave(Condition.text(getNegativTextMainPage()));
+
+    }
 
 }

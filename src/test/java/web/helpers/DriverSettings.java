@@ -16,7 +16,6 @@ public class DriverSettings {
         Configuration.browserSize = Project.config.browserSize();
         Configuration.baseUrl = Project.config.browserUrl();
 
-
         DesiredCapabilities capabilities = new DesiredCapabilities();
         ChromeOptions chromeOptions = new ChromeOptions();
 

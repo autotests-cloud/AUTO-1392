@@ -7,6 +7,7 @@ public class TextData {
     private static String aboutPageUrl = "/about/";
     private static String loginButtonText = "Login";
     private static String signUpButtonText = "Sign up free";
+    private static String negativTextMainPage = "20 M";
 
     public static String getLoginButtonText() {
         return loginButtonText;
@@ -31,4 +32,9 @@ public class TextData {
     public String getMainPageUrl() {
         return mainPageUrl;
     }
+
+    public static String getNegativTextMainPage() {
+        return negativTextMainPage;
+    }
+
 }

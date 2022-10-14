@@ -85,4 +85,12 @@ public class MiroTest extends TestBase {
             assertThat(consoleLogs).doesNotContain(errorText);
         });
     }
+
+    @Test
+    @DisplayName("Negative test")
+    void negativeTests(){
+        open("https://miro.com");
+        steps.compareTextOnMainPage();
+
+    }
 }

@@ -1,7 +1,5 @@
 package web.tests;
 
-import com.codeborne.selenide.Configuration;
-import web.config.Project;
 import web.helpers.AllureAttachments;
 import web.helpers.DriverSettings;
 import web.helpers.DriverUtils;
@@ -13,7 +11,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
-
 
 @ExtendWith({AllureJunit5.class})
 public class TestBase {
@@ -29,17 +26,14 @@ public class TestBase {
 
     @AfterEach
     public void afterEach() {
-        String sessionId = DriverUtils.getSessionId();
 
         AllureAttachments.addScreenshotAs("Last screenshot");
         AllureAttachments.addPageSource();
-//        AllureAttachments.attachNetwork(); // todo
         AllureAttachments.addBrowserConsoleLogs();
+        AllureAttachments.addVideo();
 
         Selenide.closeWebDriver();
 
-        if (Project.isVideoOn()) {
-            AllureAttachments.addVideo(sessionId);
-        }
     }
+
 }
