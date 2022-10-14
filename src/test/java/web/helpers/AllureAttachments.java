@@ -2,6 +2,7 @@ package web.helpers;
 
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +13,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import static com.codeborne.selenide.Selenide.sleep;
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static web.helpers.DriverUtils.getSessionId;
 
 public class AllureAttachments {
@@ -42,8 +44,10 @@ public class AllureAttachments {
                 + getVideoUrl()
                 + "' type='video/mp4'></video></body></html>";
     }
+
     public static URL getVideoUrl() {
-        String videoUrl = "https://selenoid.autotests.cloud/video/" + getSessionId() + ".mp4";
+        String videoUrl = "http://nepneppen.keenetic.pro:8080/video/" + getSessionId() + ".mp4";
+
 
         try {
             return new URL(videoUrl);
@@ -51,6 +55,10 @@ public class AllureAttachments {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public static String getSessionId() {
+        return ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
     }
 
 }

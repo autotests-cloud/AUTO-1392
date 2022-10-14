@@ -27,14 +27,13 @@ public class TestBase {
 
     @AfterEach
     public void afterEach() {
+        String sessionId = DriverUtils.getSessionId();
 
         AllureAttachments.addScreenshotAs("Last screenshot");
         AllureAttachments.addPageSource();
         AllureAttachments.addBrowserConsoleLogs();
         AllureAttachments.addVideo();
-
         Selenide.closeWebDriver();
-
     }
 
 }
