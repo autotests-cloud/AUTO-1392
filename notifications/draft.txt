@@ -1,7 +1,9 @@
-https://api.telegram.org/bot5654487937:AAFBxOVSlbuzJ_BuVcweSzq0a2Qa0ZH6I94/getUpdates
+5525783958:AAEj6CxS9SAyshSBpDamqQobfb0ThNl2_7U
+
+https://api.telegram.org/bot5525783958:AAEj6CxS9SAyshSBpDamqQobfb0ThNl2_7U/getUpdates
 
 chat_id 788646272
 
-curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "788646272", "text": "This is a test from curl", "disable_notification": true}' https://api.telegram.org/bot$5654487937:AAFBxOVSlbuzJ_BuVcweSzq0a2Qa0ZH6I94/sendMessage
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "788646272", "text": "This is a test from curl", "disable_notification": true}' https://api.telegram.org/bot$5525783958:AAEj6CxS9SAyshSBpDamqQobfb0ThNl2_7U/sendMessage
 
 java "-DconfigFile=notifications/telegram.json" -jar notifications/allure-notifications-4.2.1.jar
