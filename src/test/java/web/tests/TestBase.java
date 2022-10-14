@@ -1,5 +1,6 @@
 package web.tests;
 
+import com.codeborne.selenide.Configuration;
 import web.helpers.AllureAttachments;
 import web.helpers.DriverSettings;
 import web.helpers.DriverUtils;
