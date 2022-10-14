@@ -16,6 +16,7 @@ public class DriverSettings {
         Configuration.browserSize = Project.config.browserSize();
         Configuration.timeout = 10000;
 //        Configuration.baseUrl = Project.config.browserUrl();
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         ChromeOptions chromeOptions = new ChromeOptions();
