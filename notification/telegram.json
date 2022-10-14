@@ -1,8 +1,8 @@
 {
   "base": {
-    "project": "My project",
+    "project": "miro-e2e-tests",
     "environment": "prod",
-    "comment": "comment in json",
+    "comment": "Test telegram report",
     "reportLink": "",
     "language": "en",
     "allureFolder": "build/allure-report/",
