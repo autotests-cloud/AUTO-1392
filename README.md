@@ -1,4 +1,9 @@
 # Проект по автоматизации тестирования для Miro
+<a target="_blank" href="https://miro.com/">The Visual Collaboration Platform for Every Team | Miro</a> 
+<p align="center">
+<a href="https://miro.com/"><img src="images/miro_logo.png" width="400" height="100"  alt="IDEA"/></a>
+
+</p>
 
 ## :scroll: Содержание:
 
@@ -12,18 +17,17 @@
 
 ## :rocket: Технологии и инструменты
 
-<div align="center">
-<a href="https://www.jetbrains.com/idea/"><img alt="InteliJ IDEA" height="50" src="external/logos/Intelij_IDEA.svg" width="50"/></a>
-<a href="https://www.java.com/"><img alt="Java" height="50" src="external/logos/Java.svg" width="50"/></a>
-<a href="https://junit.org/junit5/"><img alt="JUnit 5" height="50" src="external/logos/JUnit5.svg" width="50"/></a>
-<a href="https://selenide.org/"><img alt="Selenide" height="50" src="external/logos/Selenide.svg" width="50"/></a>
-<a href="https://gradle.org/"><img alt="Gradle" height="50" src="external/logos/Gradle.svg" width="50"/></a>
-<a href="https://github.com/allure-framework/"><img alt="Allure" height="50" src="external/logos/Allure.svg" width="50"/></a>
-<a href="https://www.jenkins.io/"><img alt="Jenkins" height="50" src="external/logos/Jenkins.svg" width="50"/></a>
-<a href="https://aerokube.com/selenoid/"><img alt="Selenoid" height="50" src="external/logos/Selenoid.svg" width="50"/></a>
-<a href="https://github.com/"><img alt="GitHub" height="50" src="external/logos/GitHub.svg" width="50"/></a>
-<a href="https://telegram.org/"><img alt="Telegram" height="50" src="external/logos/Telegram.svg" width="50"/></a>
-</div>
+<p align="center">
+<a href="https://www.jetbrains.com/idea/"><img src="images/intellij-idea.svg" width="50" height="50"  alt="IDEA"/></a>
+<a href="https://www.java.com/"><img src="images/Java.svg" width="50" height="50"  alt="Java"/></a>
+<a href="https://github.com/"><img src="images/Github.svg" width="50" height="50"  alt="Github"/></a>
+<a href="https://junit.org/junit5/"><img src="images/JUnit5.svg" width="50" height="50"  alt="JUnit 5"/></a>
+<a href="https://gradle.org/"><img src="images/Gradle.svg" width="50" height="50"  alt="Gradle"/></a>
+<a href="https://selenide.org/"><img src="images/Selenide.svg" width="50" height="50"  alt="Selenide"/></a>
+<a href="https://aerokube.com/selenoid/"><img src="images/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>
+<a href="https://github.com/allure-framework/allure2"><img src="images/Allure_Report.svg" width="50" height="50"  alt="Allure"/></a>
+<a href="https://www.jenkins.io/"><img src="images/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
+</p>
 
 ## :scroll: Реализованные-проверки
 
@@ -37,7 +41,7 @@
 ## <img src="images/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins job
 <a target="_blank" href="https://jenkins.autotests.cloud/job/miro-e2e-tests-jenkins/">Сборка в Jenkins</a>
 <p align="center">
-<a href="https://jenkins.autotests.cloud/job/miro-e2e-tests-jenkins/"><img src="images/jenkins_job.png" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/miro-e2e-tests-jenkins/"><img src="images/Jenkins_job.png" alt="Jenkins"/></a>
 </p>
 
 ### Параметры сборки в Jenkins:
@@ -73,18 +77,44 @@ test
 ### Основное окно
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/allure_main.png">
+<img title="Allure Overview Dashboard" src="images/Allure_main.png">
+</p>
+
+### Тесты
+
+<p align="center">
+<img title="Allure Tests" src="images/Allure_tests.png">
+</p>
+
+### Гафики
+
+<p align="center">
+<img title="Allure Graphics" src="images/Allure_graphics.png">
+</p>
+
+## <img src="images/Allure_EE.svg" width="25" height="25"  alt="Allure"/></a>Интеграция с <a target="_blank" href="https://allure.autotests.cloud/launch/16057">Allure TestOps</a>
+
+### Дашборд
+
+<p align="center">
+<img title="Allure TestOps Dashboard" src="images/testOps_main.png">
+</p>
+
+### Тест-кейсы
+
+<p align="center">
+<img title="Allure TestOps Tests" src="images/testOps_tests.png">
 </p>
 
 
 ## <img src="images/Telegram.svg" width="25" height="25"  alt="Allure"/></a> Уведомление в Telegram при помощи бота
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/allure_telegram.png">
+<img title="Allure Overview Dashboard" src="images/telegram_report.png">
 </p>
 
 ### <img src="images/Selenoid.svg" width="25" height="25"  alt="Allure"/></a> Примеры видео о прохождении тестов
 
 <p align="center">
-<img title="Selenoid Video" src="images/video1.gif" width="250" height="153"  alt="video"> <img title="Selenoid Video" src="images/video2.gif" width="250" height="153"  alt="video"> 
+<img title="Selenoid Video" src="images/video_1.gif" width="250" height="153"  alt="video"> <img title="Selenoid Video" src="images/video_2.gif" width="250" height="153"  alt="video"> 
 </p>
