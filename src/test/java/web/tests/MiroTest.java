@@ -13,12 +13,11 @@ import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 import static web.tests.Steps.*;
 
-@Tag("simple")
 public class MiroTest extends TestBase {
     Steps steps = new Steps();
 
     @Test
-    @DisplayName("miro-e2e-tests")
+    @DisplayName("Chose English")
     void choosingLanguage() {
         step("Open 'https://miro.com'", () -> {
             open("https://miro.com");
