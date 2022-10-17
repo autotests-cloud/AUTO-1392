@@ -33,11 +33,10 @@
 :heavy_check_mark: Проверка, что страница меняет свое названия при смене языка.
 :x: Пример упавшего теста.
 
-## <img src="images/Jenkins.svg" width="30" height="30"  alt="Jenkins"/></a> Jenkins job
-
-<a target="_blank" href="https://jenkins.autotests.cloud/job/miro-e2e-tests-jenkins/">Сборка в Jenkins</a>
+## <img src="images/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins job
+<a target="_blank" href="https://jenkins.autotests.cloud/job/berezkindv_performance_lab_complete_project/">Сборка в Jenkins</a>
 <p align="center">
-<a href="https://jenkins.autotests.cloud/job/miro-e2e-tests-jenkins/"><img src="images/jenkins_job.png" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/berezkindv_performance_lab_complete_project/"><img src="images/jenkins_job.png" alt="Jenkins"/></a>
 </p>
 
 ### Параметры сборки в Jenkins:
