@@ -1,7 +1,6 @@
 package web.tests;
 
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
@@ -45,7 +44,8 @@ public class MiroTest extends TestBase {
     }
 
     @CsvFileSource(resources = "/testData.csv")
-    @ParameterizedTest(name = "texts changes depending on the selected box")
+    @DisplayName("Texts changes depending on the selected box")
+    @ParameterizedTest(name = "Vacancies correspond to the selected city")
     void correctContentAboutUs(String testData, String expectedResult) {
         steps.openAboutUrl()
                 .clickOnCountry(testData)

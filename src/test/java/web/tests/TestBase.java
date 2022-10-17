@@ -1,6 +1,6 @@
 package web.tests;
 
-import com.codeborne.selenide.Configuration;
+import web.config.Project;
 import web.helpers.AllureAttachments;
 import web.helpers.DriverSettings;
 import web.helpers.DriverUtils;
@@ -32,8 +32,11 @@ public class TestBase {
         AllureAttachments.addScreenshotAs("Last screenshot");
         AllureAttachments.addPageSource();
         AllureAttachments.addBrowserConsoleLogs();
-        AllureAttachments.addVideo();
         Selenide.closeWebDriver();
+
+        if (Project.isVideoOn()) {
+            AllureAttachments.addVideo(sessionId);
+        }
     }
 
 }
