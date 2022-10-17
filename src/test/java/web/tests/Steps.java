@@ -52,7 +52,7 @@ public class Steps {
         $("header [href='/signup/']").shouldHave(text(getSignUpButtonText()));
     }
     public static void checkingPresenceOfTheLogo(){
-        $("header .IconButton__IconButtonInner-sc-1w01a3h-0 svg").shouldBe(Condition.appear);
+        $("header span.eLNXYm").shouldBe(Condition.appear);
     }
     public void compareTextOnMainPage(){
         $(".com-sec-slider-3 .com-el-content").shouldHave(Condition.text(getNegativTextMainPage()));
