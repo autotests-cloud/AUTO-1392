@@ -88,7 +88,7 @@ public class MiroTest extends TestBase {
     }
 
     @Test
-    @DisplayName("Negative test")
+    @DisplayName("Example of a dropped test")
     void negativeTests(){
         open("https://miro.com");
         steps.compareTextOnMainPage();
