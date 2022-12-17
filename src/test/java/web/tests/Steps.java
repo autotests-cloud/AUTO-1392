@@ -8,9 +8,9 @@ import static com.codeborne.selenide.Selenide.*;
 import static web.tests.TextData.*;
 
 public class Steps {
-
+TextData textData = new TextData();
     public Steps openCareerUrl() {
-        open(getCareersPageUrl());
+        open(textData.getCareersPageUrl());
         return this;
     }
 
@@ -24,7 +24,7 @@ public class Steps {
     }
 
     public Steps openAboutUrl() {
-        open(getAboutPageUrl());
+        open(textData.getAboutPageUrl());
         return this;
     }
 
@@ -45,17 +45,17 @@ public class Steps {
         $("div ul a[data-locale='" + language + "']").click();
     }
     public Steps comparisoNameLoginButton(){
-        $("header [href='/login/']").shouldHave(text(getLoginButtonText()));
+        $("header [href='/login/']").shouldHave(text(textData.getLoginButtonText()));
         return this;
     }
     public void comparisoNameSignUpButton(){
-        $("header [href='/signup/']").shouldHave(text(getSignUpButtonText()));
+        $("header [href='/signup/']").shouldHave(text(textData.getSignUpButtonText()));
     }
     public static void checkingPresenceOfTheLogo(){
         $("header span.eLNXYm").shouldBe(Condition.appear);
     }
     public void compareTextOnMainPage(){
-        $(".com-sec-slider-3 .com-el-content").shouldHave(Condition.text(getNegativTextMainPage()));
+        $(".com-sec-slider-3 .com-el-content").shouldHave(Condition.text(textData.getNegativTextMainPage()));
 
     }
 
